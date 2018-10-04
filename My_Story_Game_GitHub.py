@@ -24,7 +24,7 @@ def path_choice():
     if "exit" in action:
         print "You see a massive sword sticking out of the ground, and two large doors behind it."
     elif "dark" in action or "cave" in action:
-        dead("Cave TEST")
+        cave()
     else:
         print "That's not a path."
         path_choice()
@@ -108,6 +108,23 @@ def first_encounter():
             dead("The dead have no mercy.")
         else:
             dead("You stand there paralyzed as the skeleton rips your body apart.")
+
+
+def cave():
+    print "You pick up a torch from the the wall of the cave."
+    print "You arrive at a fork in the cave."
+    print "The left path has light in the distance. The right path is pitch black."
+    print "The pitch black path has footprints on the floor heading deeper."
+    print "Which path do you follow?"
+
+    action = raw_input("Left or Right?: ")
+
+    if action == "left" or action == "Left":
+        dead("Test the LEFT")
+    elif action == "right" or action == "Right":
+        dead("Test the RIGHT")
+    else:
+        dead("Test Else Cave")
 
 
 backpack = []
