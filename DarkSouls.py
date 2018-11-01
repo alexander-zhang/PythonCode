@@ -79,7 +79,7 @@ def first_encounter():
             print "The skeleton crumbles to dust."
             graveyard()
             return None
-        elif "fight" in action and "Rust Sword" not in backpack:
+        elif "fight" in action and "Rusty Sword" not in backpack:
             dead("You punch the skeleton. It does nothing.")
         elif "run" in action and "Rusty Sword" not in backpack and not exhausted:
             print "You see the rusty sword on the ground as you run back to where you came from."
