@@ -111,6 +111,14 @@ def first_encounter():
 
 
 # In Progress
+
+#Inside of the if statements, you are checking "left" and "Left"
+#How can you check it using only one condition (hint: change the casing of the word)
+
+
+
+#
+
 def cave():
     print "You pick up a torch from the the wall of the cave."
     print "You arrive at a fork in the cave."
